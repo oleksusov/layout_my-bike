@@ -1,13 +1,433 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>MyBiKE</title>
+    <link
+      rel="shortcut icon"
+      href="images/icons/favicon.svg"
+      type="image/x-icon"
+    >
     <link rel="stylesheet" href="./styles/main.scss">
+    <script src="scripts/main.js" defer></script>
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+  <body class="page__body">
+    <header class="page__section header">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__top">
+            <a href="#" class="logo">
+              <img
+                src="images/icons/logo.svg"
+                alt="Bose"
+                class="logo__image"
+              >
+            </a>
+
+            <a
+              href="tel:+1 234 555-55-55"
+              class="icon icon--phone"
+            >
+              <div class="icon__tooltip">
+                +1 234 555-55-55
+              </div>
+            </a>
+
+            <a
+              href="#menu"
+              class="icon icon--menu"
+            ></a>
+          </div>
+          
+          <h1 class="header__title">
+            Take the Streets
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="page__menu menu" id="menu">
+      <div class="container">
+        <div class="menu__content">
+          <div class="menu__top">
+            <a href="#" class="logo">
+              <img
+                src="images/icons/logo_black.svg"
+                alt="MyBike"
+                class="logo__image"
+              >
+            </a>
+
+            <a href="#"></a>
+
+            <a
+              href="#"
+              class="icon icon--cross"
+            ></a>
+          </div>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                Home
+              </a>
+            </li>
+    
+            <li class="menu__item">
+              <a href="#about-us" class="menu__link">
+                About us
+              </a>
+            </li>
+    
+            <li class="menu__item">
+              <a href="#bikes" class="menu__link">
+                Compare bikes
+              </a>
+            </li>
+    
+            <li class="menu__item">
+              <a href="#details" class="menu__link">
+                Details
+              </a>
+            </li>
+    
+            <li class="menu__item">
+              <a href="#contact-us" class="menu__link">
+                Contacts
+              </a>
+            </li>
+          </ul>
+    
+          <a href="tel:+1 234 555-55-55" class="menu__call menu__call--phone">
+            +1 234 555-55-55
+          </a>
+    
+          <a href="tel:+1 234 555-55-55" class="menu__call menu__call--action">
+            Book a test ride
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="page__section about-us" id="about-us">
+        <div class="container">
+          <div class="about-us__content">
+            <h2 class="about-us__title">
+              Move Free
+            </h2>
+          
+            <p class="about-us__description">
+              Shift your ride, not gears. Find the fastest way to move in the city as the bike adapts intuitively to power the speed you need.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section bikes" id="bikes">
+        <div class="container">
+          <h2 class="bikes__title">
+            Compare Bikes
+          </h2>
+
+          <div class="bikes__items">
+            <article class="bikes__item bike">
+              <div class="bike__image-container">
+                <img
+                  src="images/bikes/bike-1.jpg"
+                  alt="Bose portable Smart speaker"
+                  class="bike__image"
+                >
+              </div>
+  
+              <h3 class="bike__name">
+                Sporty 4
+              </h3>
+  
+              <p class="bike__description">
+                The iconic frame brought to a new performance height as a sporty, active ride.
+              </p>
+  
+              <p class="bike__price">
+                $ 2 590
+              </p>
+            </article>
+  
+            <article class="bikes__item bike">
+              <div class="bike__image-container">
+                <img
+                  src="images/bikes/bike-2.jpg"
+                  alt="SoundLink Flex Bluetooth speaker"
+                  class="bike__image"
+                >
+              </div>
+  
+              <h3 class="bike__name">
+                Ride in town ST
+              </h3>
+  
+              <p class="bike__description">
+                An open frame for an upright riding position as the most comfortable ride in town.
+              </p>
+  
+              <p class="bike__price">
+                $ 2 590
+              </p>
+            </article>
+  
+            <article class="bikes__item bike">
+              <div class="bike__image-container">
+                <img
+                  src="images/bikes/bike-3.jpg"
+                  alt="SoundLink Color Bluetooth speaker II"
+                  class="bike__image"
+                >
+              </div>
+  
+              <h3 class="bike__name">
+                Agile ride 3
+              </h3>
+  
+              <p class="bike__description">
+                The lightweight frame that has earned its street tread as a sleek, agile ride.
+              </p>
+  
+              <p class="bike__price">
+                $ 2 090
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      
+      <section class="page__section details" id="details">
+        <div class="container">
+          <h2 class="details__title">
+            The Details
+          </h2>
+
+          <div class="details__items">
+            <article class="details__item detail">
+              <div class="detail__images">
+                <div class="
+                  detail__image-container
+                  detail__image-container--rectangle
+                ">
+                  <img
+                    src="images/details/detail-1.jpg"
+                    alt="headphones & earbuds"
+                    class="detail__image"
+                  >
+                </div>
+  
+                <div class="
+                  detail__image-container
+                  detail__image-container--square
+                ">
+                  <img
+                    src="images/details/detail-2.jpg"
+                    alt="headphones & earbuds"
+                    class="detail__image"
+                  >
+                </div>
+              </div>
+  
+              <div class="detail__info">
+                <h3 class="detail__title">
+                  Auto Unlock
+                </h3>
+                
+                <p class="detail__description">
+                  The app senses when you're nearby to unlock automatically. GPS tracking so you know where your bike is and can track it anytime.
+                </p>
+              </div>
+            </article>
+  
+            <article class="details__item detail">
+              <div class="detail__images">
+                <div class="
+                  detail__image-container
+                  detail__image-container--rectangle
+                ">
+                  <img
+                    src="images/details/detail-3.jpg"
+                    alt="speakers"
+                    class="detail__image"
+                  >
+                </div>
+  
+                <div class="
+                  detail__image-container
+                  detail__image-container--square
+                ">
+                  <img
+                    src="images/details/detail-4.jpg"
+                    alt="speakers"
+                    class="detail__image"
+                  >
+                </div>
+              </div>
+  
+              <div class="detail__info">
+                <h3 class="detail__title">
+                  Range & Integrated lights
+                </h3>
+                
+                <p class="detail__description">
+                  The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.
+                </p>
+              </div>
+            </article>
+  
+            <article class="details__item detail">
+              <div class="detail__images">
+                <div class="
+                  detail__image-container
+                  detail__image-container--square
+                ">
+                  <img
+                    src="images/details/detail-5.jpg"
+                    alt="audio sunglasses"
+                    class="detail__image"
+                  >
+                </div>
+  
+                <div class="
+                  detail__image-container
+                  detail__image-container--rectangle
+                ">
+                  <img
+                    src="images/details/detail-6.jpg"
+                    alt="audio sunglasses"
+                    class="detail__image"
+                  >
+                </div>
+              </div>
+  
+              <div class="detail__info">
+                <h3 class="detail__title">
+                  Hydraulic disc brakes & Lightweight
+                </h3>
+                
+                <p class="detail__description">
+                  Brakes with total stopping power the second you make contact. The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.
+                </p>
+              </div>
+            </article>
+
+            <div class="details__button-container">
+              <a href="#" class="details__button button">
+                Explore
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="page__section contact-us" id="contact-us">
+        <div class="container">
+          <h2 class="contact-us__title">
+            Contact us
+          </h2>
+
+          <div class="contact-us__content">
+            <form 
+              class="contact-us__form"
+              method="get"
+            >
+              <label for="name"></label>
+
+              <input
+                class="
+                  contact-us__field
+                  form-field
+                "
+                name="name"
+                id="name"
+                type="text"
+                placeholder="Name"
+              >
+
+              <label for="email"></label>
+
+              <input
+                class="
+                  contact-us__field
+                  form-field
+                "
+                name="email"
+                id="email"
+                type="email"
+                placeholder="Email"
+              >
+              <textarea
+                class="
+                  contact-us__field
+                  form-field
+                  form-field--textarea
+                "
+                name="message"
+                id="message"
+                placeholder="Message"
+              ></textarea>
+    
+              <button class="button">
+                Send
+              </button>
+            </form>
+
+            <div class="contact-us__info-container">
+              <div class="contact-us__info">
+                <p class="contact-us__info-title">
+                  Phone
+                </p>
+    
+                <a
+                  href="tel:+1 234 555-55-55"
+                  class="contact-us__info-link"
+                >
+                  +1 234 555-55-55
+                </a>
+              </div>
+    
+              <div class="contact-us__info">
+                <p class="contact-us__info-title">
+                  Email
+                </p>
+    
+                <a
+                  href="mailto:hello@miami.com"
+                  class="contact-us__info-link"
+                >
+                  hello@miami.com
+                </a>
+              </div>
+    
+              <div class="contact-us__info">
+                <p class="contact-us__info-title">
+                  Address
+                </p>
+    
+                <a
+                  href="https://goo.gl/maps/FuR2DLpcNCtqYcWs6"
+                  class="contact-us__info-link"
+                  target="_blank"
+                >
+                  400 first ave.
+                  <br>
+                  suite 700
+                  <br>
+                  Minneapolis, MN 55401
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
   </body>
 </html>

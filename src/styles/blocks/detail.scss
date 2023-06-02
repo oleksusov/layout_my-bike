@@ -1,0 +1,83 @@
+.detail {
+  &__images {
+    @include pageGrid;
+    margin-bottom: 16px;
+  }
+
+  &__image-container {
+    position: relative;
+    transition: all 0.3s;
+
+    &--rectangle {
+      @include onTablet {
+        grid-column: span 4;
+      }
+
+      @include onDesktop {
+        grid-column: span 8;
+      }
+    }
+
+    &--square {
+      height: 0;
+      padding-bottom: 100%;
+
+      @include onTablet {
+        grid-column: span 2;
+      }
+
+      @include onDesktop {
+        grid-column: span 4;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__info {
+    @include onTablet {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    @include onDesktop {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
+  &__title {
+    @extend %h3;
+    margin-bottom: 8px;
+
+    @include onTablet {
+      grid-column: span 6;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__description {
+    @extend %text;
+
+    @include onTablet {
+      grid-column: span 6;
+    }
+    
+    @include onDesktop {
+      grid-column: span 8;
+    }
+  }
+}

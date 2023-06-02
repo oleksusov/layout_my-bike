@@ -1,0 +1,32 @@
+.bike {
+  &__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  &__image {
+    object-fit: contain;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+
+  &__name {
+    @extend %h3;
+    margin-bottom: 8px;
+  }
+
+  &__description {
+    @extend %text;
+    margin-bottom: 16px;
+  }
+
+  &__price {
+    @extend %h3;
+  }
+}

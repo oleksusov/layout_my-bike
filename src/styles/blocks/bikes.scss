@@ -1,0 +1,24 @@
+.bikes {
+  &__title {
+    @include sectionTitle;
+  }
+
+  &__items {
+    @include pageGrid;
+    row-gap: 40px;
+  }
+
+  &__item {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 2 / -2;
+      row-gap: 48px;
+    }
+  
+    @include onDesktop {
+      grid-column: span 4;
+      row-gap: 0;
+    }
+  }
+}
